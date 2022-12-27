@@ -58,7 +58,7 @@ export const Summary = () => {
           ))}
       </div>
       <div className="summary_total">
-        <span className="summary_total_title">{`Total ${!monthly? "(per month)":"(per year)"}`}</span>
+        <span className="summary_total_title">{`Total ${monthly? "(per month)":"(per year)"}`}</span>
         <span className="summary_total_amount">{`+$${total * newPrice}/${type}`}</span>
       </div>
     </div>
