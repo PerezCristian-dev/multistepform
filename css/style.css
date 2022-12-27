@@ -1,0 +1,215 @@
+﻿
+@media only screen and (max-width:500px){
+
+
+    .Headcontainer{
+        display: block;
+        
+        text-align: center;
+        width: 100%;
+    }
+
+    .logo{
+        display: inline-block;
+        width: 100%;
+    }
+
+
+    nav {
+        background-color: #000000;
+        width: 100%;
+        position: static;
+    }
+
+ 
+    
+    nav li{
+        display: inline-block;
+        margin: 10px 5px;
+        
+    }
+
+    nav a{
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+    }
+}    
+@media only screen and (min-width: 1000px) {
+Body{
+
+    background: linear-gradient(white, grey);
+}
+.Headcontainer{
+    position: relative;
+    text-align: center;
+    margin: 0 auto; 
+}
+
+.logo{
+    display: inline-block;
+    width: 450px;
+}
+
+nav {
+    background-color: #000000;
+    width: 100%;
+}
+
+nav li{
+    display: inline-block;
+    margin: 15px 15px;
+}
+nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+}
+.listadiferenciales li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding-top: 10px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #770303;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.imgdiferencial{
+    width: 95%;
+    margin: 0;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+.diferenciales h3{
+text-align: center;
+font-weight: bold;
+font-size: 20px;
+text-transform: uppercase;
+margin: 10px;
+
+}
+
+
+footer{
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+    text-decoration: none;
+    background: url(E:/Programacion/img/bg.jpg);
+}
+
+footer a{
+
+    text-decoration: none;
+    font-size: 12px;
+    
+}
+
+nav a:hover{
+
+    color: #770303;
+}
+
+nav a:active{
+
+    color: red;
+}
+
+.containerappointment{
+    margin: 15px 0;
+    width: 100%;
+    text-align: center;
+}
+.buttonappointment{
+    margin-top: 15px;
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #770303;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor:pointer;
+}
+
+.buttonappointment:hover{
+    background: #bbbbbb;
+    transform: scale(1.2);
+
+}
+
+.buttonappointment:active{
+    background: #bbbbbb;
+
+}
+
+.listadiferenciales li:hover{
+
+    transform: scale(1.1);
+    transition: 1s all;
+}
+
+.ubicacion{
+position: relative;
+width: 50%;
+text-align: center;
+}
+
+
+.ubicacion h1 {
+font-size: 40px;
+font-weight: bold;
+
+}
+.map {
+    width: 80%; 
+    border:2px solid #770303;
+    height: 450px;
+    margin: 25px 0;
+    border-radius: 25px;
+    box-shadow: 1px 1px 2px black, 0 0 25px darkred, 0 0 5px #770303;
+}
+ 
+
+.video{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    width: 50%;
+    
+}
+
+.youtube{
+    margin: 25px 0;
+    width: 80%; 
+    border:2px solid #770303;
+    height: 450px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 2px black, 0 0 25px darkred, 0 0 5px #770303;
+
+}
+
+.Iframes{
+    display: flex;
+    text-align: center;
+    margin-top: 50px auto;
+
+
+}
+}

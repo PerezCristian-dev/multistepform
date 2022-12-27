@@ -1,0 +1,117 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>The Recipe World</title>
+</head>
+
+<body>
+    <header>
+        <h1>The Recipe World</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li>Recetas</li>
+            <li>Recetarios</li>
+            <li>Create tu Recetas</li>
+        </ul>
+    </nav>
+
+    <section>
+        <div>
+            <h1>Recetas Classicas</h1></h1>
+        </div>
+    </section>
+
+    <section>
+        <h1>Que quieres cocinar?</h1>
+        <div>
+            <h1>Elige los ingredientes</h1>
+        </div>
+        <div>1er paso</div>
+        <div>2do paso</div>
+    </section>
+
+    <section>
+        <div>
+            <h1>Que te gustaria ver</h1>
+        </div>
+
+        <div>Picture 1</div>
+        <div>Picture 1</div>
+        <div>Picture 1</div>
+        <div>Picture 1</div>
+
+    </section>
+
+    <section>
+        <p>
+            Si el mundo de la cocina te fascina, en RecetasGratis descubrirás una infinidad de recetas riquísimas que deleitarán incluso a los paladares más exigentes. En nuestra web encontrarás todo tipo de recetas de cocina capaces de sorprender a los paladares más exquisitos. Contamos con cocineros experimentados en todos los ámbitos de la cocina que trabajan para ofrecerte las mejores recetas caseras, fáciles y rápidas de hacer.
+            Entrantes, increíbles aperitivos, todo tipo de ensaladas, pastas, sopas, arroces, carnes, pescados, repostería... RecetasGratis sorprende con una gran variedad de recetas de cocina fáciles a la vez que gustosas, que te dejarán sin palabras. Encontrarás recetas sanas de varias cocinas del mundo: española, colombiana, argentina, mexicana, peruana, chilena, italiana, etc.
+            </br></br>
+            En nuestra web encontrarás recetas de cocina casera ideales para hacer platos para todos los gustos y dietas: vegetarianos, veganos, celiacos, alérgicos al huevo, sin azúcar... Bastará con que decidas cuál de nuestras recetas quieres hacer y te pongas a ello."
+        </p>
+    </section>
+
+    <footeer>Crated by Christheadvenger</footeer>
+    <style>
+        * {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        body {
+            font-style: italic;
+            color: white;
+            background-color: black;
+        }
+    </style>
+
+
+    <script>
+        function aleatorio() {
+            do {
+                var numeroEntero = Math.round(Math.random() * 10);
+            } while (numeroEntero <= 0);
+
+            return numeroEntero
+
+        }
+
+        function soltoNumero(cantidad) {
+            var secretos = [];
+            var contador = 1;
+
+            if (secretos == "") {
+                secretos.push(aleatorio());
+            }
+            while (secretos.length < cantidad) {
+                var numeroAletorio = aleatorio();
+                var encontrado = false;
+
+                if (secretos.includes(numeroAletorio) == true) {
+                    encontrado = true;
+
+                    do {
+                        numeroAletorio = aleatorio();
+
+                        if (secretos.includes(numeroAletorio) == false) {
+                            encontrado = true;
+                            secretos.push(numeroAletorio);
+                            contador++;
+                        } else {
+                            encontrado = false;
+                        }
+                    } while (encontrado == false);
+                } else {
+                    secretos.push(numeroAletorio);
+                    contador++;
+                }
+
+            }
+            return secretos;
+        }
+        document.write(soltoNumero(4));
+    </script>
+
+</body>
+</html>

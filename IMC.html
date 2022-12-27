@@ -1,0 +1,73 @@
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <title>IMC</title>
+    
+        <header>
+            <h1>PROGRAM</h1>
+        </header>
+    </head>
+
+    <body>
+        <style>
+            {
+               font-family: "Times New Roman", Times, serif;
+            }
+            body{
+                font-style: italic;
+                color: white;
+                background-color: black;
+            }
+        </style>
+
+        <script>
+
+            function linebreak() {
+                document.write("<br>");
+                document.write("<br>");
+                document.write("<br>");
+            }
+
+            function print(msg) {
+                document.write(msg);
+                linebreak();
+            }
+
+            function calculoImc(altura, peso) {
+               return Math.round(peso / (altura * altura));
+            }
+
+            var name = prompt("What is your name?");
+            var givenWeight = prompt( name + ", What is your weight?");
+            var givenHeight = prompt( name +", What is your height?");
+            var imc = calculoImc(givenHeight, givenWeight);
+
+            var peso1 = calculoImc(1.78, 80);
+            var peso2 = calculoImc(1.50, 50);
+
+            print("The average weight of the individuals is " + Math.round((peso1 + peso2) / 2) + "kg.");
+
+            print(name + " your average corporal volume is " + Math.round(imc) + " kg.");
+
+            if (imc < 18.5) {
+                print("below recommended weight");
+            }
+
+            if (imc >= 18.5 && imc < 25) {
+                print("Normal weight");
+            }
+
+            if (imc >= 25 && imc < 30) {
+                print("over recommended weight");
+            }
+
+            if (imc >= 30) {
+                print("overweight");
+            }
+
+
+                       
+            // peso corporal peso/(altura*altura)
+        </script>
+    </body>
+</html>

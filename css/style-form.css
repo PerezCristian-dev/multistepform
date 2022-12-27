@@ -1,0 +1,139 @@
+﻿header{
+    background-color:#bbbbbb;
+    padding: 20px 0;
+}
+
+.Headcontainer{
+position: relative;
+width: 940px;
+margin: 0 auto;
+}
+
+nav li{
+    display: inline;
+    margin-left:15px;
+
+}
+
+nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+main {
+width: 940px;
+margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 3px;
+}
+
+.padron{
+    display:block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+    text-decoration: none;
+    background: url(E:/Programacion/img/bg.jpg);
+}
+
+footer a{
+
+    text-decoration: none;
+    font-size: 12px;
+    
+}
+
+nav a:hover{
+
+    color: #c78c19;
+}
+
+nav a:active{
+
+    color: #088c19;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor:pointer;
+}
+
+.enviar:hover{
+    background: #c78c19;
+    transform: scale(1.2);
+
+}
+
+.enviar:active{
+    transition: 0s all;
+    background: #bbbbbb;
+}
+
+table{
+    margin:40px 40px;
+    text-align: center;
+    
+}
+
+thead{
+    background: #bbbbbb;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 8px 15px;
+
+}
+
+.buttonappointment{
+
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor:pointer;
+}

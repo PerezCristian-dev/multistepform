@@ -1,0 +1,47 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>IMC</title>
+</head>
+
+<body>
+
+    <h1>Click en el boton para ver los heroes</h1>
+
+    <style>
+        * {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        body {
+            font-style: italic;
+            color: white;
+            background-color: black;
+        }
+    </style>
+
+    <button id="boton">Ver Heroes</button>
+
+    <script>
+        var heroes = ["Superman", "Thor", "Batman", "Mujer Maravilla"];
+
+        function printheroes() {
+            for (var x = 0; x < heroes.length; x++) {
+
+                if (heroes[x] == "Superman") {
+
+                }
+                else {
+
+                    document.write(heroes[x]);
+                    document.write("<br/>");
+                }
+                   
+            }
+        }
+        var button = document.querySelector("button");
+        boton.onclick = printheroes;
+    </script>
+
+</body>
+</html>

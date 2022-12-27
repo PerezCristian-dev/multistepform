@@ -1,0 +1,54 @@
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <title>Calculo Media</title>
+    
+        <header>
+            <h1>Media de Edades</h1>
+        </header>
+    </head>
+
+    <body>
+        <style>
+            {
+               font-family: "Times New Roman", Times, serif;
+            }
+            body{
+                font-style: italic;
+                color: white;
+                background-color: black;
+            }
+        </style>
+
+        <script>
+
+            function linebreak() {
+                document.write("<br>");
+                document.write("<br>");
+                document.write("<br>");
+            }
+
+            function print(msg) {
+                document.write(msg);
+                linebreak();
+            }
+
+            var miembros = parseInt(prompt("Ingrese la cantidad de miembros de su familia"));
+            var x = 1;
+            var total = 0;
+
+            while (x <= miembros) {
+                
+                var edad = parseInt(prompt("Cual es la edad del familiar?"));
+                total = total + edad;
+                print(total);
+                x++;
+            }
+            
+            var mediaEdad = total / miembros;
+
+            print("fin" );
+
+        </script>
+    </body>
+</html>

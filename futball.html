@@ -1,0 +1,72 @@
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <title>IMC</title>
+    
+        <header>
+            <h1>Programa - Calcular puntos de un equipo de Futbol</h1>
+        </header>
+    </head>
+
+    <body>
+        <style>
+            {
+               font-family: "Times New Roman", Times, serif;
+            }
+            body{
+                font-style: italic;
+                color: white;
+                background-color: black;
+            }
+        </style>
+
+        <script>
+
+            function linebreak() {
+                document.write("<br>");
+                document.write("<br>");
+                document.write("<br>");
+            }
+
+            function print(msg) {
+                document.write(msg);
+                linebreak();
+            }
+
+            function calcularpuntos(victorias, empates) {
+                puntosTotal = victorias * 3 + empates;
+                return puntosTotal;
+            }
+
+            // using parseInt to transform text to number
+            var victorias = parseInt(prompt("How many victories did your team get?"));
+            var empates = parseInt(prompt("What's the amount of even games?"));
+            var lastyear = parseInt(prompt("How many point your team got last year?"));
+            var puntos = parseInt(calcularpuntos(victorias, empates));
+           
+            print("The total amount of point of the team is: " + calcularpuntos(victorias, empates));
+            print(victorias + empates);
+
+
+            if (puntos > lastyear) {
+                print("The team is performing better than last year.");
+            }
+
+            if (puntos < lastyear) {
+                print("The team is doing worth than last year.");
+            }
+                
+            if (puntos == lastyear) {
+                print("The team is performing just as last year.");
+            }
+                
+            
+            var numero = lastyear
+
+            if (numero >= 2 && numero < 12) {
+                alert("ENTRÓ!");
+            }
+            // peso corporal peso/(altura*altura)
+        </script>
+    </body>
+</html>

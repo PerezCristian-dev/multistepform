@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>programa</title>
+</head>
+<body>
+    <h1>Genera Tu Grafico de Barras</h1>
+    <p>Numero de barras deseadas</p>
+    <input class="barras" placeholder="Ingrese el numero de barras" id="cantidadBarras" />
+    <p>Ingrese el valor</p>
+    <input class="Valores" placeholder="Ingrese el valor" id="valores" />
+    <p>Ingrese la etiqueta</p>
+    <input class="legenda" placeholder="Ingrese la etiqueta" id="legendas" />
+    <br />
+    <br />
+    <canvas width="600" height="400">
+    </canvas>
+    <br />
+    <button>Crear Grafico</button>
+</body>
+<script>
+
+var pantalla = document.querySelector("canvas");
+var pincel = pantalla.getContext("2d");
+pincel.fillStyle = "lightgray";
+pincel.fillRect(0, 0, 600, 400);
+
+   function disenharCircunferencia(x, y, radio){
+        pincel.fillStyle = "blue";
+        pincel.beginPath();
+       pincel.arc(x, y, radio, 0, 2 * Math.PI);
+       pincel.fill();
+
+    }
+
+    
+    function limpiarPantalla() {
+
+        pincel.clearRect(0, 0, 600, 400);
+    }
+
+    var x = 0;
+    var y = 20;
+    function actualizarPantalla() {
+
+        limpiarPantalla();
+        disenharCircunferencia(x, y, 10);
+        x++;
+        if (x == 600) {
+            x = 0;
+            y = y + 20;
+        }
+
+        if (y > 380) {
+
+            y = 20;
+        }
+      
+    }
+
+    setInterval(actualizarPantalla, 5);
+
+
+    
+    
+   
+
+</script>
+
+
+</html>

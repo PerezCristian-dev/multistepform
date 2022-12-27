@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Tiro al Blanco</title>
+</head>
+<canvas width="1080" height="400">
+
+
+<body>
+</canvas>
+<br />
+<br />
+<button onclick=limpiar()>Limpiar</button>
+<button id="Red">Red</button>
+<button id="Blue">Blue</button>
+<button id="Yellow">Yellow</button>
+
+</body>
+
+<script>
+    var pantalla = document.querySelector('canvas');
+    var pincel = pantalla.getContext('2d');
+
+
+    var red = document.getElementById("Red");
+    var yellow = document.getElementById("Yellow");
+    var blue = document.getElementById("Blue");
+    var color = "Black";
+    red.onclick = function changecolor() {
+        color = "Red";
+
+    }
+    blue.onclick = function changecolor() {
+        color = "Blue";
+
+    }
+    yellow.onclick = function changecolor() {
+        color = "Yellow";
+    }
+
+    function limpiar() {
+        pincel.clearRect(0, 0, 1080, 400);
+        incel.fillStyle = 'grey';
+        pincel.fillRect(0, 0, 1080, 400);
+        puedoDibujar = false;
+    }
+
+    var puedoDibujar = true;
+    function dibujarCirculo(evento) {
+
+        if (puedoDibujar) {
+            var x = evento.pageX - pantalla.offsetLeft;
+            var y = evento.pageY - pantalla.offsetTop;
+            pincel.fillStyle = color;
+            pincel.beginPath();
+            pincel.arc(x, y, 5, 0, 2 * 3.14);
+            pincel.fill();
+        }
+
+    }
+
+    pantalla.onmousemove = dibujarCirculo;
+
+    function habilitarDibujar() {
+
+        puedoDibujar = true;
+    }
+
+    function deshabilitarDibujar() {
+
+        puedoDibujar = false;
+    }
+
+    pantalla.onmousedown = habilitarDibujar;
+
+    pantalla.onmouseup = deshabilitarDibujar;
+
+</script>
+
+
+</html>

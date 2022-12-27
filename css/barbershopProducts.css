@@ -1,0 +1,132 @@
+﻿
+header{
+    background-color:#bbbbbb;
+    padding: 20px 0;
+}
+
+.Headcontainer{
+position: relative;
+width: 940px;
+margin: 0 auto;
+}
+
+nav li{
+    display: inline;
+    margin-left:15px;
+
+}
+
+
+
+
+
+nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+.products {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.products li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+    
+}
+
+.products li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+    
+}
+
+.products li:hover{
+    border-color: #c78c19;
+    
+}
+
+
+.products li:hover h2{
+    font-size: 33px;
+    color: #c78c19;
+    
+}
+
+.product li:active h2 {
+    font-size: 33px;
+    color: #088c19;
+}
+
+.products li:active{
+    border-color: #088c19;
+ 
+    
+}
+
+.products h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.description {
+    font-size: 20px;
+}
+
+.precio {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top:10px;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+    text-decoration: none;
+    background: url(E:/Programacion/img/bg.jpg);
+}
+
+footer a{
+
+    text-decoration: none;
+    font-size: 12px;
+    
+}
+
+nav a:hover{
+
+    color: #c78c19;
+}
+
+nav a:active{
+
+    color: #088c19;
+}

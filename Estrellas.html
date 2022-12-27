@@ -1,0 +1,47 @@
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <title>IMC</title>
+    
+        <header>
+            <h1>Reddle Me This</h1>
+        </header>
+    </head>
+
+    <body>
+        <style>
+            {
+               font-family: "Times New Roman", Times, serif;
+            }
+            body{
+                font-style: italic;
+                color: white;
+                background-color: black;
+            }
+        </style>
+
+        <script>
+
+            function linebreak() {
+                document.write("<br>");
+
+            }
+
+            function print(msg) {
+                document.write(msg);
+                linebreak();
+            }
+
+            for (var lineas = 1; lineas <= 3; lineas++) {
+                for (var columnas = 1; columnas <= 10; columnas++) {
+                    document.write("*");
+                }
+                linebreak();
+            }
+            
+
+            print("FIN");
+            // peso corporal peso/(altura*altura)
+        </script>
+    </body>
+</html>

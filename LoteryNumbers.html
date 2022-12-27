@@ -1,0 +1,62 @@
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <title>Lotery</title>
+    
+        <header>
+            <h1>Will you be the winner?</h1>
+        </header>
+    </head>
+
+    <body>
+        <style>
+            {
+               font-family: "Times New Roman", Times, serif;
+            }
+            body{
+                font-style: italic;
+                color: white;
+                background-color: black;
+            }
+        </style>
+
+        <script>
+            function linebreak() {
+                document.write("<br>");
+                document.write("<br>");
+                document.write("<br>");
+            }
+
+            function print(msg) {
+                document.write(msg);D
+                linebreak();
+            }
+
+            function random(x) {
+                var random = Math.round((Math.random() * x))
+                return random;
+            }
+
+            var numero = parseInt(prompt("Please enter a max number?"));
+            var solteo = random(numero)
+            var numerodeseado = parseInt(prompt("What's your desire number?"));
+
+            if (numero < numerodeseado) {
+                print("Please enter a number between 0 and " + numero);
+            }
+            else {
+                if (solteo == numerodeseado) {
+                    print("Congratulations, You are the winner your desired number match our source number, you've won " + (numerodeseado * 1000) + " us dollars.");
+                }
+                else if (solteo < numerodeseado) {
+                    print("Unfortunately, You lost, your number is smaller than our source number " + solteo);
+                }
+                else {
+                    print("Unfortunately, You lost, your number is grater than our source number " + solteo);
+                }
+            }
+            
+            // peso corporal peso/(altura*altura)
+        </script>
+    </body>
+</html>

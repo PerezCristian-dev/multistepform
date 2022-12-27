@@ -1,0 +1,48 @@
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <title>IMC</title>
+    
+        <header>
+            <h1>Reddle Me This</h1>
+        </header>
+    </head>
+
+    <body>
+        <style>
+            {
+               font-family: "Times New Roman", Times, serif;
+            }
+            body{
+                font-style: italic;
+                color: white;
+                background-color: black;
+            }
+        </style>
+
+        <script>
+
+
+                var inicioDeSesionRegistrado = "alura";
+                var contrasenhaRegistrada = "alura321";
+
+
+
+            var attempts=1
+            while (attempts <= 3) {
+
+                var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+                var contrasenhaIngresada = prompt("Ingrese su contraseña");
+
+                if (inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada) {
+                    alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+                    break;
+                } else {
+                    alert("inicio de sesión inválido. Favor intente de nuevo");
+                }
+                attempts++
+            }
+            // peso corporal peso/(altura*altura)
+        </script>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <title>Multiplicar</title>
+    
+        <header>
+            <h1>Tabla de Multiplicar</h1>
+        </header>
+    </head>
+
+    <body>
+        <style>
+            {
+               font-family: "Times New Roman", Times, serif;
+            }
+            body{
+                font-style: italic;
+                color: white;
+                background-color: black;
+            }
+        </style>
+
+        <script>
+
+            function linebreak() {
+                document.write("<br>");
+                document.write("<br>");
+                document.write("<br>");
+            }
+
+            function print(msg) {
+                document.write(msg);
+                linebreak();
+            }
+
+            var multiplicador = 1;
+            var tabla = parseInt(prompt("Ingrese el numero de la tabla que desea ver"));
+            print("WHILE");
+            while(multiplicador <= 10){
+                
+                print(tabla + " x " + multiplicador + " = " + (tabla * multiplicador));
+                multiplicador++;
+            }
+
+            print("FOR");
+            for (var multiplicador = 1; multiplicador <= 10; multiplicador++) {
+                print(tabla + " X " + multiplicador + " = " +(tabla * multiplicador));
+            }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>programa</title>
+</head>
+<body>
+
+</body>
+
+<canvas width="600px" height="400px">
+
+</canvas>
+<script>
+
+    var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+    pincel.fillStyle = "lightgray";
+    pincel.fillRect(0, 0, 600, 400);
+
+    function dibujarCirculo(x, y, radio, color) {
+
+        pincel.fillStyle = color;
+        pincel.beginPath();
+        pincel.arc(x, y, radio, 0, 2 * 3.14);
+        pincel.fill();
+    }
+
+    dibujarCirculo(300,200,30,"red");
+    dibujarCirculo(360, 200, 30, "black");
+    dibujarCirculo(240, 200, 30, "orange");
+    dibujarCirculo(300, 260, 30, "blue");
+    dibujarCirculo(300, 140, 30, "yellow");
+
+</script>
+</html>
