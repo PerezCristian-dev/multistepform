@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+
+  :root{
+    font-family: Just, Lato;
+  }
+
+.bgBlack{
+  background-color: black;
+  color: white;
+}
+
+.navbar{
+  position: absolute;
+  color:white;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  width: calc(100vw - 20px);
+  justify-content: space-between;
+  border-bottom: white solid 2px;
+  padding: 10px 50px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.navbar__container{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav__logo{
+  height: 80px;
+}
+
+.navba_item{
+  cursor: pointer;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.navba_item:hover{
+ color: #007bff;
+}
+
+.btnblue{
+  background-color: #007bff; 
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.btnlight{
+  color: white;
+  padding: 15px;
+  border: #007bff solid 1px;
+  border-radius: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.bg-image{
+  color: white;
+  background-image: url("assets/banner.png");
+  background-size: 85% 100% ;
+  background-repeat: no-repeat;
+}
+
+.banner__container{
+  position: absolute;
+  width: 400px;
+  align-self: center;
+  right: 15%;
+  
+}
+
+.banner__title{
+  font-size: 40px;
+  margin-bottom: 10px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.banner__desc{
+  line-height: 1.5;
+  color: #f8f8f9;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.main_container{
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  width: calc(100vw - 20px);
+  height: 80vh;
+  background-color: #050923;
+}
+
+.line{
+  background-color: orange;
+  border: none;
+  width: 99%;
+  height: 3px;
+  margin-bottom:20px ;
+}
+
+.line_blue{
+  background-color: #050923;
+  border: none;
+  width: 100%;
+  height: 3px;
+}
+
+.card__logo{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  background-color:#142365;
+  width: 250px;
+  height: 100%;
+}
+
+.card__img{
+  width: 90px;
+  height: 90px;
+  margin: 0 auto;
+ 
+}
+
+.card__container{
+  overflow: hidden;
+  border-radius:10px ;
+  width: 30%;
+  height: 240px;
+  margin: 50px;
+  background-color: #007bff;
+  box-shadow: 0px 25px 25px 10px rgba(0, 0, 0, 0.4);
+}
+}
+
+
